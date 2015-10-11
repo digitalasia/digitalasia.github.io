@@ -8,9 +8,9 @@ NARDOVE.Main = (function() {
 	var timer = new Date();
 	var addJellyTimer = 0;
 	var jellyCounter = 0;
-	var numJellies = 7;
+	var numJellies = 2;
 	var jellies = [numJellies];
-	var jellyResolution = 14;
+	var jellyResolution = 20;
 
 
 	window.onload = function() {
@@ -19,6 +19,15 @@ NARDOVE.Main = (function() {
 
 
 	this.draw = function(event) {
+		if (event.time > addJellyTimer + 6 && jellyCounter < numJellies) {
+			jellySize = Math.random() * 10 + 40;
+			jellies[jellyCounter] = new NARDOVE.Jelly(jellyCounter, jellySize, jellyResolution);
+			jellies[jellyCounter].init();
+
+			jellyCounter++;
+			addJellyTimer = event.time;
+		}
+
 		if (event.time > addJellyTimer + 6 && jellyCounter < numJellies) {
 			jellySize = Math.random() * 10 + 40;
 			jellies[jellyCounter] = new NARDOVE.Jelly(jellyCounter, jellySize, jellyResolution);

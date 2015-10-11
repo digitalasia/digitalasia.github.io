@@ -10,6 +10,19 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 
 	// Colours courtesy of deliquescence:
 	// http://www.colourlovers.com/palette/38473/boy_meets_girl
+
+
+	//new color schema
+	//Let jelly fish swim in two
+
+	// this.colours = [{s:"#FB6A00", f:"#49ACBB"},
+	// 				{s:"#1b3b3a", f:"#61cac8"},
+	// 				{s:"#2d393f", f:"#88a5b3"},
+	// 				{s:"#422b3a", f:"#b0809e"},
+	// 				{s:"#5b263a", f:"#d85c8a"},
+	// 				{s:"#580c23", f:"#ff3775"},
+	// 				{s:"#681635", f:"#EB1962"}];
+
 	this.colours = [{s:"#1C4347", f:"#49ACBB"},
 					{s:"#1b3b3a", f:"#61cac8"},
 					{s:"#2d393f", f:"#88a5b3"},
@@ -27,7 +40,7 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 	this.location = new Point(-50, Math.random() * view.size.height);
 	this.velocity = new Point(0, 0);
 	this.acceleration = new Point(0, 0);
-	
+
 	this.maxSpeed = Math.random() * 0.1 + 0.15;
 	this.maxTravelSpeed = this.maxSpeed * 3.5;
 	this.maxForce = 0.2;
@@ -52,7 +65,7 @@ NARDOVE.Jelly.prototype.init = function() {
 		var angle = theta * i;
 		var x = Math.cos(angle) * this.pathRadius * 0.7;
 		var y = Math.sin(angle) * this.pathRadius;
-		
+
 		if (angle > 0 && angle < Math.PI) {
 			y -= Math.sin(angle) * (this.pathRadius * 0.6);
 			this.numTentacles++;
@@ -97,7 +110,7 @@ NARDOVE.Jelly.prototype.update = function(event) {
 
 	// this.path.position = this.location.clone();
 	this.group.position = this.location.clone();
-	
+
 
 	// Rotation alignment
 	var locVector = new Point(this.location.x - this.lastLocation.x,
@@ -105,14 +118,14 @@ NARDOVE.Jelly.prototype.update = function(event) {
 	this.orientation = locVector.angle + 90;
 	// this.path.rotate(this.orientation - this.lastOrientation);
 	this.group.rotate(this.orientation - this.lastOrientation);
-	
+
 	// Expansion Contraction
 	for (var i = 0; i < this.pathSides; i++) {
 		var segmentPoint = this.path.segments[i].point;
 		// var sineSeed = -(event.time * 3 + this.path.segments[i].point.y * 0.5);
 		var sineSeed = -((event.count * this.maxSpeed) + (this.pathPoints[i].y * 0.0375));
 		var normalRotatedPoint = this.pathPointsNormals[i].rotate(this.orientation);
-		
+
 		segmentPoint.x += normalRotatedPoint.x * Math.sin(sineSeed);
 		segmentPoint.y += normalRotatedPoint.y * Math.sin(sineSeed);
 	}
@@ -133,7 +146,7 @@ NARDOVE.Jelly.prototype.steer = function(target, slowdown) {
 	var steer;
 	var desired	= new Point(target.x - this.location.x, target.y - this.location.y);
 	var dist = desired.length;
-	
+
 	if (dist > 0) {
 		if (slowdown && dist < 100) {
 			desired.length = (this.maxTravelSpeed) * (dist / 100);
@@ -141,7 +154,7 @@ NARDOVE.Jelly.prototype.steer = function(target, slowdown) {
 		else {
 			desired.length = this.maxTravelSpeed;
 		}
-		
+
 		steer = new Point(desired.x - this.velocity.x, desired.y - this.velocity.y);
 		steer.length = Math.min(this.maxForce, steer.length);
 	}
@@ -163,20 +176,20 @@ NARDOVE.Jelly.prototype.wander = function() {
 	var wanderR = 5;
 	var wanderD	= 100;
 	var change = 0.05;
-	
+
 	this.wanderTheta += Math.random() * (change * 2) - change;
-	
+
 	var circleLocation = this.velocity.clone();
 	circleLocation = circleLocation.normalize();
 	circleLocation.x *= wanderD;
 	circleLocation.y *= wanderD;
 	circleLocation.x += this.location.x;
 	circleLocation.y += this.location.y;
-	
+
 	var circleOffset = new Point(wanderR * Math.cos(this.wanderTheta), wanderR * Math.sin(this.wanderTheta));
-	
+
 	var target = new Point(circleLocation.x + circleOffset.x, circleLocation.y + circleOffset.y);
-	
+
 	this.seek(target);
 }
 
