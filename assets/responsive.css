@@ -1,0 +1,23 @@
+
+
+/*PHONE*/
+@media (max-width: 200) and (min-width: 599px) {
+  .mobile {
+    display: block;
+  }
+
+  .non-mobile {
+    display: none;
+  }
+}
+
+
+/*Not Phone*/
+@media (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+  .non-mobile {
+    display: block;
+  }
+}
