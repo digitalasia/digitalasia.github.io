@@ -1,15 +1,14 @@
 
 
 /*PHONE*/
-@media (max-width: 200) and (min-width: 599px) {
+/*@media (max-width: 200px) and (min-width: 599px) {*/
   .mobile {
     display: block;
   }
-
-  .non-mobile {
+  .nonmobile {
     display: none;
   }
-}
+/*}*/
 
 
 /*Not Phone*/
@@ -17,7 +16,7 @@
   .mobile {
     display: none;
   }
-  .non-mobile {
+  .nonmobile {
     display: block;
   }
 }
