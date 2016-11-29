@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76009ba5-bf56-4d8f-9c7a-0adff1b1eadc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="76009ba5-bf56-4d8f-9c7a-0adff1b1eadc" name="Default" comment="" />
     <ignored path="tadadotasia.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -291,12 +289,12 @@
       <workItem from="1477289725443" duration="173000" />
       <workItem from="1477289901898" duration="302000" />
       <workItem from="1477366692004" duration="98000" />
-      <workItem from="1480405784764" duration="433000" />
+      <workItem from="1480405784764" duration="707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2781000" />
+    <option name="totallyTimeSpent" value="3055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="153" y="94" width="1440" height="808" extended-state="0" />
