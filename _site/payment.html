@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>(TADA) The Amazing Digital Asia</title>
+		<!-- CSS Begins -->
+		<link rel="stylesheet" type="text/css" href="./assets/css">
+		<link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
+
+		<style media="screen">
+			.box {
+				width: 600px;
+				margin: 0 auto;
+				border: 1px solid #d1d1d1;
+				padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="wrap">
+
+				<div class="box">
+					<h4>Thank you for making payment to our service.</h4>
+					<br>
+
+					If you are making a bank transfer, please make a transfer to DBS Current 107-900-9808 <br><br>
+
+					If you are paying by cheque, please cross it and made payable to: TADA PTE. LTD. <br><br>
+
+					Send bryan an email after you have made a transaction: <a href="mailto:bryan@tada.asia">bryan@tada.asia</a>
+
+					<br><br>
+					<div id="app">
+						If you are making an online payment, you may enter the amount of $<input v-model="message" placeholder="Enter the amount"> and click
+						<a v-bind:href="baseURL + message">
+							<button type="button" name="button">Make an online payment of ${{ message }}</button>
+						</a>
+					</div>
+
+				</div>
+
+
+
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+			</div>
+		</footer>
+
+	</path>
+
+</body>
+
+
+<script type="text/javascript">
+new Vue({
+	el: '#app',
+	data: {
+		baseURL: 'http://www.paypal.me/tadapay/',
+		message: ''
+	}
+})
+</script>
+</html>
