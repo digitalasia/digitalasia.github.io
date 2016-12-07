@@ -1,0 +1,30 @@
+-
+  type: "question"
+  question: "Is there a 15 minutes time interval for booking slot?"
+  answer: "No, good appointment uses a thirty minute time interval for all time slot."
+-
+  type: "question"
+  question: "How to disable booking fee in my booking?"
+  answer: "Yes. Go to setting and choose disabled under booking fee."
+-
+  type: "question"
+  question: "Is GoodAppointment free for non-profit organisation?"
+  answer: "Yes. Just send us an email and we will switch you to a free account."
+-
+  type: "break"
+-
+  type: "question"
+  question: "Good Appointment is not showing up for me."
+  answer: "Please send us an email and we will fix the problem."
+-
+  type: "question"
+  question: "Where is the referral page?"
+  answer: "Please go to _____________."
+-
+  type: "question"
+  question: "Where can I post a bug report?"
+  answer: "Please go to [something](http://google.com)"
+-
+  type: "question"
+  question: "My company would like to purchase a set of X software. Can we get in touch?"
+  answer: "We do not sell at custom price. Please get the software from sign up page here."
