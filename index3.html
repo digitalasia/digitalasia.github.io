@@ -16,7 +16,7 @@
 		<!-- CSS Begins -->
 		<link rel="stylesheet" type="text/css" href="./assets/css.css">
 		<link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
-		<!-- <link rel="stylesheet" type="text/css" href="./assets/nardove.css"> -->
+		<link rel="stylesheet" type="text/css" href="./assets/nardove.css">
 
 	</head>
 
@@ -42,27 +42,27 @@
 						</p>
 					</div>
 
-					<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 description">
+					<!-- <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 description">
 						<p><li><a href="#ourproduct" data-toggle="collapse">★ Make Payment & Deposit</a></li>
 						<div id="ourproduct" class="collapse">
 							<ol>
-								<li><a href="#" data-toggle="modal" data-target="#myModal1">For an existing project</a></li>
-								<li><a href="/groupbuy">For late payment</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#existing_project">For an existing project</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#late_payment">For late payment</a></li>
 							</ol>
 						</div>
 						<li><a href="#appointment" data-toggle="collapse">★ Schedule an appointment</a></li>
 						<div id="appointment" class="collapse">
 							<ol>
-								<li><a href="/birdeyeview">New physical appointment</a></li>
-								<li><a href="/birdeyeview">New skype/call appointment</a></li>
-								<li><a href="/groupbuy">Request for a callback</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#physical_appointment">New physical appointment</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#skype_appointment">New skype/call appointment</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#requestcallback">Request for a callback</a></li>
 							</ol>
 						</div>
 						<li><a href="#legal" data-toggle="collapse">★ Legal & Document</a></li>
 						<div id="legal" class="collapse">
 							<ol>
-								<li><a href="https://github.com/ytbryan/aka" target="_blank">Request for NDA</a></li>
-								<li><a href="https://github.com/ytbryan/chart" target="_blank">Request for </a></li>
+								<li><a href="#" data-toggle="modal" data-target="#requestnda">Request for NDA</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#requestsignature">Request for Signature</a></li>
 							</ol>
 						</div>
 						<li><a href="#opensource" data-toggle="collapse">★ Contact Us & Other Queries</a></li>
@@ -71,12 +71,9 @@
 								<li><a href="https://github.com/ytbryan/aka" target="_blank">aka</a></li>
 								<li><a href="https://github.com/ytbryan/chart" target="_blank">chart</a></li>
 								<li><a href="https://github.com/ytbryan/todolist" target="_blank">todolist</a></li>
-								<li><a href="https://github.com/ytbryan/slicing" target="_blank">slicing</a></li>
-								<li><a href="https://github.com/ytbryan/xxxxx" target="_blank">xxxxx</a></li>
-								<li><a href="https://github.com/ytbryan/indite" target="_blank">indite</a></li>
 							</ol>
 						</div></p>
-					</div>
+					</div> -->
 
 					<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 description">
 						<p>
@@ -92,12 +89,8 @@
 			</div>
 		</div>
 
-		<!-- <footer class="footer">
-			<div class="container">
-			</div>
-		</footer> -->
 
-		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="existing_project" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -107,6 +100,128 @@
 					<div class="modal-body">
 						<p>
 							<script type="text/javascript" src="https://form.jotform.me/jsform/70162888126460"></script>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="modal fade" id="late_payment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"><img class="img-circle" src="https://pbs.twimg.com/profile_images/421544124932571136/jNi3gbUg.jpeg" style="width:50px;height:50px;" alt=""></img> Greeting 👋</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							Late payment
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="physical_appointment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"><img class="img-circle" src="https://pbs.twimg.com/profile_images/421544124932571136/jNi3gbUg.jpeg" style="width:50px;height:50px;" alt=""></img> Greeting 👋</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							physical_appointment
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="skype_appointment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"><img class="img-circle" src="https://pbs.twimg.com/profile_images/421544124932571136/jNi3gbUg.jpeg" style="width:50px;height:50px;" alt=""></img> Greeting 👋</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							skype_appointment
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="requestcallback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"><img class="img-circle" src="https://pbs.twimg.com/profile_images/421544124932571136/jNi3gbUg.jpeg" style="width:50px;height:50px;" alt=""></img> Greeting 👋</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							skype_appointment
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="requestnda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"><img class="img-circle" src="https://pbs.twimg.com/profile_images/421544124932571136/jNi3gbUg.jpeg" style="width:50px;height:50px;" alt=""></img> Greeting 👋</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							request NDA
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="requestsignature" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"><img class="img-circle" src="https://pbs.twimg.com/profile_images/421544124932571136/jNi3gbUg.jpeg" style="width:50px;height:50px;" alt=""></img> Greeting 👋</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							request Signature
 						</p>
 					</div>
 					<div class="modal-footer">
