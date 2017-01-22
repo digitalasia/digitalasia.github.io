@@ -4,10 +4,7 @@ html, body {
 	border: 0px;
 	padding: 0px;
 	height: 100%;
-	/*background-color: #fcfcfc;*/
-	/*overflow: hidden;*/
 	font-family: 'Libre Baskerville', serif;
-	/*font-size: 12pt;*/
 	color: #000;
 }
 
@@ -37,7 +34,7 @@ html, body {
 #main {
 	overflow: auto;
 	/*padding-top: 70px;*/
-	padding-bottom: 150px;
+	/*padding-bottom: 150px;*/
 }
 
 
