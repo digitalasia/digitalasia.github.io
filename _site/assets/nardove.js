@@ -19,8 +19,8 @@ NARDOVE.Main = (function() {
 
 
 	this.draw = function(event) {
-		if (event.time > addJellyTimer + 6 && jellyCounter < numJellies) {
-			jellySize = Math.random() * 10 + 40;
+		if (event.time > addJellyTimer  && jellyCounter < numJellies) {
+			jellySize = Math.random() * 10 + 30;
 			jellies[jellyCounter] = new NARDOVE.Jelly(jellyCounter, jellySize, jellyResolution);
 			jellies[jellyCounter].init();
 
