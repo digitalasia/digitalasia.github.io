@@ -7,15 +7,33 @@
 		<!-- CSS Begins -->
 		<link rel="stylesheet" type="text/css" href="./assets/css.css">
 		<link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script> -->
 
 		<style media="screen">
-			.box {
-				width: 100%;
-				margin: 0 auto;
-				border: 1px solid #d1d1d1;
-				padding: 20px;
+
+			@media all and (min-width: 700px) {
+				.box {
+					width: 600px;
+					margin: 0 auto;
+					border: 1px solid #d1d1d1;
+					padding: 20px;
+				}
 			}
+
+			@media all and (max-width: 699px) {
+
+				.box {
+					width: 100%;
+					margin: 0 auto;
+					border: 1px solid #d1d1d1;
+					padding: 20px;
+				}
+
+
+
+
+			}
+
+
 
 		 	iframe {
 				/*marginheight: 50px;*/
@@ -34,6 +52,11 @@
 		<div id="wrap">
 
 				<div class="box">
+
+					<div class="">
+						<p><a href="/">← Back to homepage</a></p>
+					</div>
+
 					<h2>Will The Amazing Digital Asia Company be a good fit for your next software project?</h2>
 
 					<ol>
