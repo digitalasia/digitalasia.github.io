@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>(TADA) The Amazing Digital Asia</title>
+		<!-- CSS Begins -->
+		<link rel="stylesheet" type="text/css" href="./assets/css.css">
+		<link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
+
+		<style media="screen">
+			.box {
+				width: 600px;
+				margin: 0 auto;
+				border: 1px solid #d1d1d1;
+				padding: 20px;
+			}
+
+		 	iframe {
+				/*marginheight: 50px;*/
+				/*margin: 30px 60px;*/
+				/*margin-top: -50px;*/
+			}
+
+			ol li {
+				font-size: 19px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="wrap">
+
+				<div class="box">
+					<h2>Will The Amazing Digital Asia Company be a good fit for your next software project?</h2>
+
+					<ol>
+						<li><mark>You own the project and the project requirement.</mark> <br>
+							<i>i.e.You know what you want in this job & what is required to get done.</i> </li>
+						<li><mark>You have a referral from someone.</mark></li>
+						<li><mark>You have a working budget for this job.</mark></li>
+					</ol>
+
+					<br>
+					<iframe id="example" src="https://docs.google.com/forms/d/e/1FAIpQLSeojZijyHgU5SHnVQ-QopkdnHdzDI0Pk_tQ7s5d3AiMpfyCbA/viewform?embedded=true"
+									width="500" height="880" frameborder="0"
+								 	marginheight="100" marginwidth="0" scrolling="no">Loading...</iframe>
+					<br><br>
+
+
+					<!-- <div id="app">
+						If you are making an online payment, you may enter the amount of $<input v-model="message" placeholder="Enter the amount"> and click
+						<a v-bind:href="baseURL + message">
+							<button type="button" name="button">Make an online payment of ${{ message }}</button>
+						</a>
+					</div> -->
+
+				</div>
+
+
+
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+			</div>
+		</footer>
+
+	</path>
+
+</body>
+
+
+<script type="text/javascript">
+new Vue({
+	el: '#app',
+	data: {
+		baseURL: 'http://www.paypal.me/tadapay/',
+		message: ''
+	}
+})
+</script>
+</html>
