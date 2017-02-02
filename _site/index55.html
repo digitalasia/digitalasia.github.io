@@ -23,6 +23,11 @@
 				display:none;
 			}
 
+			#footer_navigation {
+				display:block;
+			}
+
+
 		}
 
 		@media all and (max-width: 699px) {
@@ -32,11 +37,15 @@
 				margin-top: 10px;
 			}
 
-			#navigation  .center a {
+			#navigation .center a {
 				text-decoration: underline;
 				margin-left: 10px;
 				margin-right: 10px;
 
+			}
+
+			#footer_navigation {
+				display:none;
 			}
 
 			.row {
@@ -68,7 +77,7 @@
 					<div id="navigation" class="col-sm-11 col-md-11 col-lg-11">
 						<div class="center">
 							<div class="row">
-								<a href="#">Request for Project</a>
+								<a href="/request">Request for Project</a>
 								<a href="#">Referral Program</a>
 
 							</div>
@@ -113,15 +122,16 @@
 
 					</div>
 
-					<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 description">
+					<div id="footer_navigation" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 description">
 
 						<p>
-							<b>Quick Links</b>: <a class="dotted" href="#">Request For Project</a> | <a class="dotted" href="#">Products</a> | <a class="dotted" href="#">Services</a> | <a class="dotted" href="#">Blog</a>
+							<b>Quick Links</b>: <br>
+							<a class="dotted" href="/request">Request For Project</a> | <a class="dotted" href="#">Products</a> | <a class="dotted" href="#">Services</a> | <a class="dotted" href="#">Blog</a> | <a class="dotted" href="#">Referral Program</a>
 						</p>
 
-						<p>
+						<!-- <p>
 							<b>Quick Links</b>: <a href="#"><mark>Request For Project</mark></a> | <a href="#"><mark>Products</mark></a> | <a href="#"><mark>Services</mark></a> | <a href="#"><mark>Blog</mark></a>
-						</p>
+						</p> -->
 
 						<!-- <p>
 							<b>Quick Links</b>: <a href="#"><mark>★ Request For Project</mark></a> | <a href="#"><mark>★ Products</mark></a> | <a href="#"><mark>★ Services</mark></a> | <a href="#"><mark>★ Blog</mark></a>
