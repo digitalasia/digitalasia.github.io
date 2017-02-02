@@ -16,7 +16,36 @@
 		.dotted {
 			text-decoration: underline;
 		}
-	
+
+
+		@media all and (min-width: 700px) {
+			#navigation {
+				display:none;
+			}
+
+		}
+
+		@media all and (max-width: 699px) {
+
+			#navigation {
+				display:block;
+				margin-top: 10px;
+			}
+
+			#navigation  .center a {
+				text-decoration: underline;
+				margin-left: 10px;
+				margin-right: 10px;
+
+			}
+
+			.row {
+				padding: 10px;
+			}
+
+
+		}
+
 		</style>
 		<!-- CSS Begins -->
 		<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
@@ -35,6 +64,24 @@
 		<!-- <div id="wrap"> -->
 			<div id="main" class="container">
 				<div class="row">
+
+					<div id="navigation" class="col-sm-11 col-md-11 col-lg-11">
+						<div class="center">
+							<div class="row">
+								<a href="#">Request for Project</a>
+								<a href="#">Referral Program</a>
+
+							</div>
+
+							<div class="row">
+								<a href="#">Products</a>
+								<a href="#">Services</a>
+								<a href="#">Blog</a>
+
+							</div>
+						</div>
+					</div>
+
 					<div class="col-sm-11 col-md-11 col-lg-11">
 						<h1><span class="bold-title-text">★ The Amazing Digital Asia Company</h1>
 					</div>
