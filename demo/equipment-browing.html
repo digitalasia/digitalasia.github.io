@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AJC Equipment renting prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script src="http://unpkg.com/vue"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    .colored {
+
+    }
+    .shorter {
+      height: 200px;
+      margin-bottom: 30px;
+    }
+    html, body {
+        padding: 5px;
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-container2 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .swiper-container3 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .content {
+      margin-top: 30%;
+      /*border: 1px solid black;*/
+
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        /*display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;*/
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .fix {
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+
+
+    .swiper-pagination2, .swiper-pagination3 {
+      position: absolute;
+      text-align: center;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      z-index: 10;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="">
+      <h3>Anderson Junior College's IT equipments</h3>
+    </div>
+    <hr>
+
+    <div class="alert alert-success" role="alert">
+      <b>Note:</b> All equipments will be available on a first come first serve basis.
+      Equipment will only be assigned to you once you receive the confirmation email.
+    </div>
+
+    <!-- Swiper -->
+    <h3>All equipments</h3>
+    <div class="shorter">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 1
+
+                  <div id="example-1">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 2
+                  <div id="example-2">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 3
+                  <div id="example-3">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 4
+                  <div id="example-4">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 5
+                  <div id="example-5">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 6
+                  <div id="example-6">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 7
+                  <div id="example-7">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 8
+                  <div id="example-8">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 9
+                  <div id="example-9">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  Equipment 10
+                  <div id="example-10">
+                    <button v-on:click="counter += 1" type="button" name="button" class="btn btn-default btn-xs">Add to cart {{ counter }}</button>
+                  </div>
+                  <button onclick="alert('This should show further information about the equipment.')" type="button" name="button" class="btn btn-default btn-xs">Show Info</button>
+                </div>
+              </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+    <h3>New</h3>
+    <div class="shorter">
+      <div class="swiper-container2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fix">New Equipment 1</div>
+            <div class="swiper-slide fix">New Equipment 2</div>
+            <div class="swiper-slide fix">New Equipment 3</div>
+            <div class="swiper-slide fix">New Equipment 4</div>
+            <div class="swiper-slide fix">New Equipment 5</div>
+            <div class="swiper-slide fix">New Equipment 6</div>
+            <div class="swiper-slide fix">New Equipment 7</div>
+            <div class="swiper-slide fix">New Equipment 8</div>
+            <div class="swiper-slide fix">New Equipment 9</div>
+            <div class="swiper-slide fix">New Equipment 10</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <h3>Popular </h3>
+    <div class="shorter">
+      <div class="swiper-container3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fix">Popular Equipment 1</div>
+            <div class="swiper-slide fix">Popular Equipment 2</div>
+            <div class="swiper-slide fix">Popular Equipment 3</div>
+            <div class="swiper-slide fix">Popular Equipment 4</div>
+            <div class="swiper-slide fix">Popular Equipment 5</div>
+            <div class="swiper-slide fix">Popular Equipment 6</div>
+            <div class="swiper-slide fix">Popular Equipment 7</div>
+            <div class="swiper-slide fix">Popular Equipment 8</div>
+            <div class="swiper-slide fix">Popular Equipment 9</div>
+            <div class="swiper-slide fix">Popular Equipment 10</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="colored">
+      Prototype by Bryan Lim
+      Created on 19 March 2017
+    </div>
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+    var example1 = new Vue({
+      el: '#example-1',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-2',
+      data: {
+        counter: 0
+      }
+    })
+
+    var example1 = new Vue({
+      el: '#example-3',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-4',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-5',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-6',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-7',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-8',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-9',
+      data: {
+        counter: 0
+      }
+    })
+
+
+    var example1 = new Vue({
+      el: '#example-10',
+      data: {
+        counter: 0
+      }
+    })
+
+
+
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        paginationClickable: false,
+        spaceBetween: 20
+    });
+
+    var swiper2 = new Swiper('.swiper-container2', {
+        pagination: '.swiper-pagination2',
+        slidesPerView: 3,
+        paginationClickable: false,
+        spaceBetween: 15
+    });
+
+    var swiper3 = new Swiper('.swiper-container3', {
+        pagination: '.swiper-pagination3',
+        slidesPerView: 2,
+        paginationClickable: false,
+        spaceBetween: 10,
+        autoplay: 2500
+    });
+
+    </script>
+</body>
+</html>
