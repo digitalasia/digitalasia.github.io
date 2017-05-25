@@ -1,6 +1,16 @@
 <link rel="stylesheet" href="framework7.ios.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
 
+window.onbeforeunload = function() {
+  return "Are you sure you want to navigate away?";
+}
+
+window.addEventListener("beforeunload", function(e){
+  alert("confirm?")
+}, false);
+
+</script>
 <div class="page-content">
       <div class="content-block">
         <p>Swipe out actions on list elements is one of the most awesome F7 features. It allows you to call hidden menu for each list element where you can put default ready-to use delete button or any other buttons for some required actions. </p>
