@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://raw.githubusercontent.com/xdan/datetimepicker/master/jquery.datetimepicker.css" media="screen" title="no title" charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/xdan/datetimepicker/master/build/jquery.datetimepicker.full.js"></script>
+
+<input id="datetimepicker" type="text" >
+
+
+<script type="text/javascript">
+$.datetimepicker.setLocale('en');
+jQuery('#datetimepicker').datetimepicker({
+ i18n:{
+  de:{
+   months:[
+    'Januar','Februar','März','April',
+    'Mai','Juni','Juli','August',
+    'September','Oktober','November','Dezember',
+   ],
+   dayOfWeek:[
+    "So.", "Mo", "Di", "Mi",
+    "Do", "Fr", "Sa.",
+   ]
+  }
+ },
+ timepicker:true,
+ format:'D d/m/Y h:i '
+ // weeks:true
+});
+</script>

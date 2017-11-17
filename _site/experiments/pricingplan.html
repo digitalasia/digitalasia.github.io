@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Plan 1</th>
+      <th>Plan 2</th>
+      <th>Plan 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Feature1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">Feature2</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@TwBootstrap</td>
+    </tr>
+    <tr>
+      <th scope="row">Feature3</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">Feature4</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Powered by GoodPricing
+</p>
+
+
+
+<script type="text/javascript">
+
+// var jason = {
+//     "glossary": {
+//         "title": "example glossary",
+// 		"GlossDiv": {
+//             "title": "S",
+// 			"GlossList": {
+//                 "GlossEntry": {
+//                     "ID": "SGML",
+// 					"SortAs": "SGML",
+// 					"GlossTerm": "Standard Generalized Markup Language",
+// 					"Acronym": "SGML",
+// 					"Abbrev": "ISO 8879:1986",
+// 					"GlossDef": {
+//                         "para": "A meta-markup language, used to create markup languages such as DocBook.",
+// 						"GlossSeeAlso": ["GML", "XML"]
+//                     },
+// 					"GlossSee": "markup"
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+
+var jason = {
+    "glossary": {
+        "title": [{"answer": 10},{"answer": 12}, {"answer": 32}],
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+  //example of how to parse string json into an object json
+  // var json = '{"result":true,"count":1}',
+  //     obj = JSON.parse(json);
+  // alert(jason.glossary.title.length)
+  alert(jason.glossary.title[3].answer)
+
+  //according to the json, construct the price
+
+
+
+</script>

@@ -1,0 +1,576 @@
+<link rel="stylesheet" href="framework7.ios.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+
+  window.onbeforeunload = function() {
+    return "Are you sure you want to navigate away?";
+  }
+
+  // window.addEventListener("beforeunload", function(e){
+  //   alert("confirm?")
+  // }, false);
+
+</script>
+<div class="page-content">
+      <div class="content-block">
+        <p>Swipe out actions on list elements is one of the most awesome F7 features. It allows you to call hidden menu for each list element where you can put default ready-to use delete button or any other buttons for some required actions. </p>
+      </div>
+      <div class="content-block-title">Swipe to delete with confirm modal</div>
+      <div class="list-block">
+        <ul>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me please</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Inbox</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">I am not removable</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">Swipe to delete without confirm</div>
+      <div class="list-block">
+        <ul>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-inner">
+                <div class="item-title">Today</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Complete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-inner">
+                <div class="item-title">Next 7 days</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Complete</a></div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">I am not removable</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">Projects</div>
+      <div class="list-block">
+        <ul>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me please</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a><a href="#" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me too</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a><a href="#" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">You can't delete me</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">With callback on remove</div>
+      <div class="list-block">
+        <ul>
+          <li class="swipeout demo-remove-callback">
+            <div class="item-content swipeout-content">
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me please</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li class="swipeout demo-remove-callback">
+            <div class="item-content swipeout-content">
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me too</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">I am not removable</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">To get done.</div>
+      <div class="list-block">
+        <ul>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe right on me please</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-left"><a href="#" class="bg-green demo-reply">Reply</a><a href="#" class="bg-blue demo-forward">Forward</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe right on me too</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-left"><a href="#" class="bg-green demo-reply">Reply</a><a href="#" class="bg-blue demo-forward">Forward</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title">On both sides with overswipes</div>
+      <div class="list-block media-list">
+        <ul>
+          <li class="swipeout">
+            <div class="swipeout-content"><a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Take Home Fun</div>
+                    <div class="item-after">3:30pm</div>
+                  </div>
+                  <div class="item-subtitle">Get it done by this week</div>
+                  <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                </div></a></div>
+            <div class="swipeout-actions-left"><a href="#" class="bg-green swipeout-overswipe demo-reply">Reply</a><a href="#" class="demo-forward bg-blue">Forward</a></div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a><a href="#" class="demo-mark bg-orange">Mark</a><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete swipeout-overswipe">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="swipeout-content"><a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">John Doe (via Twitter)</div>
+                    <div class="item-after">17:11</div>
+                  </div>
+                  <div class="item-subtitle">John Doe (@_johndoe) mentioned you on Twitter!</div>
+                  <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                </div></a></div>
+            <div class="swipeout-actions-left"><a href="#" class="bg-green swipeout-overswipe demo-reply">Reply</a><a href="#" class="demo-forward bg-blue">Forward</a></div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a><a href="#" class="demo-mark bg-orange">Mark</a><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete swipeout-overswipe">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="swipeout-content"><a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Facebook</div>
+                    <div class="item-after">16:48</div>
+                  </div>
+                  <div class="item-subtitle">New messages from John Doe</div>
+                  <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                </div></a></div>
+            <div class="swipeout-actions-left"><a href="#" class="bg-green swipeout-overswipe demo-reply">Reply</a><a href="#" class="demo-forward bg-blue">Forward</a></div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a><a href="#" class="demo-mark bg-orange">Mark</a><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete swipeout-overswipe">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="swipeout-content"><a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">John Doe (via Twitter)</div>
+                    <div class="item-after">15:32</div>
+                  </div>
+                  <div class="item-subtitle">John Doe (@_johndoe) mentioned you on Twitter!</div>
+                  <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                </div></a></div>
+            <div class="swipeout-actions-left"><a href="#" class="bg-green swipeout-overswipe demo-reply">Reply</a><a href="#" class="demo-forward bg-blue">Forward</a></div>
+            <div class="swipeout-actions-right"><a href="#" class="demo-actions">More</a><a href="#" class="demo-mark bg-orange">Mark</a><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete swipeout-overswipe">Delete</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+<div class="page-content">
+
+
+  <div class="list-block">
+          <ul>
+            <li class="swipeout">
+              <div class="item-content swipeout-content">
+                <div class="item-inner">
+                  <div class="item-title">Swipe left on me please</div>
+                </div>
+              </div>
+              <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+            </li>
+            <li class="swipeout">
+              <div class="item-content swipeout-content">
+                <div class="item-inner">
+                  <div class="item-title">Swipe left on me too</div>
+                </div>
+              </div>
+              <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">I am not removable</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+  <div class="list-block">
+        <ul>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me please</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li class="swipeout">
+            <div class="item-content swipeout-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Swipe left on me too</div>
+              </div>
+            </div>
+            <div class="swipeout-actions-right"><a href="#" data-confirm="Are you sure you want to delete this item?" class="swipeout-delete">Delete</a></div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner">
+                <div class="item-title">I am not removable</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+              <!-- <div class="content-block-title">Welcome To Framework7</div>
+              <div class="content-block"><a href="about.html" class="button">About Framework7</a></div>
+              <div class="content-block-title">Framework7 Kitchen Sink</div> -->
+              <div class="list-block">
+                <ul>
+                  <li><a href="accordion.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Accordion</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="autocomplete.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Autocomplete</div>
+                          <div class="item-after"></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="calendar.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Calendar / Datepicker</div>
+                          <div class="item-after"></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="cards.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Cards</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="chips.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Chips/Tags</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="contacts.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Contacts List</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="data-table.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Data Tables</div>
+                          <div class="item-after"><span class="badge bg-green">NEW</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="floating-button.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Floating Action Button</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="forms.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Forms</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="grid.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Grid</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="icons.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Icons</div>
+                          <div class="item-after"><span class="badge bg-green">258</span></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="infinite-scroll.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Infinite Scroll</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="lazy-load.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Lazy Load Images</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="list-view.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">List View</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="login-screen.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Login Screen</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="media-lists.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Media Lists</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="messages.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Messages</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="modals.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Modals</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="bars.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Navbars And Toolbars</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="notifications.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Notifications</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="photo-browser.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Photo Browser</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="picker.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Picker</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="popover.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Popover</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="preloader.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Preloader</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="progressbar.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Progress Bar</div>
+                          <div class="item-after"></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="pull-to-refresh.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Pull To Refresh</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="searchbar.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Search Bar  </div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="panels.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Side Panels</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="sortable-list.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Sortable List</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="swipe-delete.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Swipe To Delete</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="swiper.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Swiper Slider</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="tabs.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Tabs</div>
+                          <div class="item-after"></div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="timeline.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Timeline</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="virtual-list.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Virtual List</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="animation.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Animation</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="color-themes.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Color Themes</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" class="item-link ks-generate-page">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Dynamically Generated Content</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="transitions.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Transitions And Effects</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="core-features.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Core Features</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+            <script src="framework7.js" charset="utf-8"></script>
+            <script src="kitchen-sink.js" charset="utf-8"></script>
